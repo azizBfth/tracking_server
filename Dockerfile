@@ -4,7 +4,7 @@ WORKDIR /opt/traccar
 
 RUN set -ex && \
     apk add --no-cache --no-progress wget && \
-    wget -qO /tmp/traccar.zip https://github.com/khiareddine123/my_tracking/archive/master.zip && \
+    wget -qO /tmp/traccar.zip https://github.com/azizBfth/tracking_server/archive/master.zip && \
     unzip -qo /tmp/traccar.zip -d /opt/traccar && \
     rm /tmp/traccar.zip && \
     apk del wget &&\
